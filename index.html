@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="This is a boilerplate for a Bootstrap 4.1.1 project">
+    <meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Henrik H. Boelsmand">
+    <title>Ofis 8</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand d-flex" href=".">
+                    <div>
+                        Office <span>8</span>
+                    </div>
+                    <div>
+                        Аренда и покупка <br> офисов по всему Казахстану
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <span class="navbar-toggler-icon-line"></span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-sections">
+                        <li class="nav-item">
+                            <a class="btn btn-blue-transparent d-flex align-items-center" href="#section-faq">Страна <i class="down ml-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-blue-transparent" href="#section-faq">Выставить объект</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-blue" href="#section-faq">Зарегистрироваться</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section-rent">
+        <div class="container">
+            <h2 class="clr-dark-gray text-center mb-5">АРЕНДА</h2>
+
+            <div class="row">
+                <div class="col-3">
+                    <div class="rent-filter">
+                        <label>Разделы</label>
+                        <select>
+                            <option value="Офисы">Офисы</option>
+                            <option value="Coworking and Serviced offices">Coworking and Serviced offices</option>
+                            <option value="Склады">Склады</option>
+                            <option value="Инвестиционные объекты">Инвестиционные объекты</option>
+                        </select>
+
+                        <label>Город</label>
+                        <select>
+                            <option value="Офисы">Алматы</option>
+                            <option value="Склады">Шымкент</option>
+                        </select>
+
+                        <label>Район</label>
+                        <select>
+                            <option value="Офисы">Алматы</option>
+                            <option value="Склады">Шымкент</option>
+                        </select>
+
+                        <label>Площадь</label>
+                        <div class="d-flex">
+                            <div class="mr-3">
+                                <input type="number" name="" placeholder="От">
+                            </div>
+                            <div class="ml-3">
+                                <input type="number" name="" placeholder="До">
+                            </div>
+                        </div>
+
+                        <label>Назначение</label>
+                        <select>
+                            <option value="Офисы">На 1 этаже</option>
+                            <option value="Склады">Шымкент</option>
+                        </select>
+
+                        <label>Класс</label>
+                        <select>
+                            <option value="Офисы">А</option>
+                            <option value="Склады">Шымкент</option>
+                        </select>
+
+                        <label>Количество сотрудников</label>
+                        <div class="d-flex">
+                            <div class="mr-3">
+                                <input type="number" name="" placeholder="От">
+                            </div>
+                            <div class="ml-3">
+                                <input type="number" name="" placeholder="До">
+                            </div>
+                        </div>
+
+                        <label>Тип объекта</label>
+                        <select>
+                            <option value="Офисы">А</option>
+                            <option value="Склады">Шымкент</option>
+                        </select> 
+
+                        <div class="d-flex align-items-center range-slider-text mb-4">
+                            <label class="m-0">Цена</label>
+                            <div class="range-price">
+                                <span id="min-price">100000</span>
+                                -
+                                <span id="max-price">500000</span>
+                                Т
+                            </div>
+                            <div>
+                                <span>за квм</span>
+                                <span class="active">за все</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center range-slider mb-5">
+                            <div>от</div>
+                            <div class="w-100 px-5">
+                                <input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="1000000" data-slider-step="1000" data-slider-value="[100000, 500000]"/>
+                            </div>
+                            <div>до</div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="mr-3 w-100">
+                                <button class="btn btn-blue-transparent">Дополнительные <br> характеристики</button>
+                            </div>
+                            <div class="ml-3 w-100">
+                                <button class="btn btn-blue">Поиск</button>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+
+                <div class="col-9">
+                    <div class="rent-list">
+                        <div class="rent-item">
+                            <div class="rent-image"></div>
+
+                            <div class="rent-body">
+                                <h3 class="clr-blue pl-5 pt-4">БЦ Нурлы-Тау</h3>
+                                <div class="clr-dark-gray fw-bold px-5 pt-2 pb-4"><img src="assets/img/icon-marker.png"> Мкр Таугуль, Токтабаева 13 — Сулейменова</div>
+
+                                <div class="info-list">
+                                    <div class="info-head pl-5 pb-3">
+                                        <div>
+                                            Площадь
+                                        </div>
+                                        <div>
+                                            Ставка аренды
+                                        </div>
+                                        <div>
+                                            Этаж
+                                        </div>
+                                        <div>
+                                            Состояние помещения
+                                        </div>
+                                        <div>
+                                            Бонус
+                                        </div>
+                                        <div>
+                                            Общая стоймость
+                                        </div>
+                                        <div>
+                                            Добавить в список
+                                        </div>
+                                    </div>
+                                    <div class="info-body">
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent-item">
+                            <div class="rent-image"></div>
+
+                            <div class="rent-body">
+                                <h3 class="clr-blue pl-5 pt-4">БЦ Нурлы-Тау</h3>
+                                <div class="clr-dark-gray fw-bold px-5 pt-2 pb-4"><img src="assets/img/icon-marker.png"> Мкр Таугуль, Токтабаева 13 — Сулейменова</div>
+
+                                <div class="info-list">
+                                    <div class="info-head pl-5 pb-3">
+                                        <div>
+                                            Площадь
+                                        </div>
+                                        <div>
+                                            Ставка аренды
+                                        </div>
+                                        <div>
+                                            Этаж
+                                        </div>
+                                        <div>
+                                            Состояние помещения
+                                        </div>
+                                        <div>
+                                            Бонус
+                                        </div>
+                                        <div>
+                                            Общая стоймость
+                                        </div>
+                                        <div>
+                                            Добавить в список
+                                        </div>
+                                    </div>
+                                    <div class="info-body">
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent-item">
+                            <div class="rent-image"></div>
+
+                            <div class="rent-body">
+                                <h3 class="clr-blue pl-5 pt-4">БЦ Нурлы-Тау</h3>
+                                <div class="clr-dark-gray fw-bold px-5 pt-2 pb-4"><img src="assets/img/icon-marker.png"> Мкр Таугуль, Токтабаева 13 — Сулейменова</div>
+
+                                <div class="info-list">
+                                    <div class="info-head pl-5 pb-3">
+                                        <div>
+                                            Площадь
+                                        </div>
+                                        <div>
+                                            Ставка аренды
+                                        </div>
+                                        <div>
+                                            Этаж
+                                        </div>
+                                        <div>
+                                            Состояние помещения
+                                        </div>
+                                        <div>
+                                            Бонус
+                                        </div>
+                                        <div>
+                                            Общая стоймость
+                                        </div>
+                                        <div>
+                                            Добавить в список
+                                        </div>
+                                    </div>
+                                    <div class="info-body">
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rent-item">
+                            <div class="rent-image"></div>
+
+                            <div class="rent-body">
+                                <h3 class="clr-blue pl-5 pt-4">БЦ Нурлы-Тау</h3>
+                                <div class="clr-dark-gray fw-bold px-5 pt-2 pb-4"><img src="assets/img/icon-marker.png"> Мкр Таугуль, Токтабаева 13 — Сулейменова</div>
+
+                                <div class="info-list">
+                                    <div class="info-head pl-5 pb-3">
+                                        <div>
+                                            Площадь
+                                        </div>
+                                        <div>
+                                            Ставка аренды
+                                        </div>
+                                        <div>
+                                            Этаж
+                                        </div>
+                                        <div>
+                                            Состояние помещения
+                                        </div>
+                                        <div>
+                                            Бонус
+                                        </div>
+                                        <div>
+                                            Общая стоймость
+                                        </div>
+                                        <div>
+                                            Добавить в список
+                                        </div>
+                                    </div>
+                                    <div class="info-body">
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                        <div class="info-item pl-5">
+                                            <div>
+                                                365 кв м
+                                            </div>
+                                            <div>
+                                                9 600 тг не вкл. НДС
+                                            </div>
+                                            <div>
+                                                3
+                                            </div>
+                                            <div>
+                                                Без отделки
+                                            </div>
+                                            <div>
+                                                !
+                                            </div>
+                                            <div>
+                                                7 900 800 тг
+                                            </div>
+                                            <button class="btn btn-gray-transparent">Добавить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rent-pagination">
+                        <button class="btn btn-blue mr-5">Больше</button>
+                        <button class="btn btn-blue-transparent">Сравнить <br> выбранные объекты</button> 
+
+                        <div class="pagination">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">...</a>
+                            <a href="#">18</a>
+                        </div>                       
+                    </div>
+
+                    <div class="map mt-5">
+                        <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/9429940000796125/center/76.91794395446779,43.24149821019268/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a><div class="dg-widget-link"><a href="http://2gis.kz/almaty/firm/9429940000796125/photos/9429940000796125/center/76.91794395446779,43.24149821019268/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kz/almaty/center/76.917943,43.241209/zoom/16/routeTab/rsType/bus/to/76.917943,43.241209╎Казахский государственный академический театр драмы им. М. Ауэзова?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Казахский государственный академический театр драмы им. М. Ауэзова</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"100%","height":300,"borderColor":"#fff","pos":{"lat":43.24149821019268,"lon":76.91794395446779,"zoom":16},"opt":{"city":"almaty"},"org":[{"id":"9429940000796125"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+    <!-- build:js -->
+    <script src="assets/js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>

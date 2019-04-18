@@ -1,0 +1,135 @@
+.section-rent {
+  .rent-filter {
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+
+    label {
+      color: #000;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    .btn-blue-transparent {
+      height: 4rem;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      padding-top: initial;
+      padding-bottom: initial;
+    }
+
+    .range-slider {
+      color: #C0C0C0;
+      font-size: 1.8rem;
+      line-height: 1;
+    }
+
+    .range-slider-text {
+      color: #B8B8B8;
+      font-weight: 500;
+      font-size: 1.5rem;
+      .range-price {
+        text-align: center;
+        color: $main-blue;
+        min-width: 15.5rem;
+      }
+
+      .active {
+        color: $main-blue;
+      }
+    }
+  }
+  
+  .rent-pagination {
+    margin-top: 3rem;
+    text-align: center;
+
+    .btn-blue-transparent {
+      height: 4rem;
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      padding-top: initial;
+      padding-bottom: initial;
+    }
+
+    .pagination {
+      display: flex;
+      margin-top: 2rem;
+      justify-content: center;
+      .active {
+        color: $main-blue;
+      }
+      a {
+        color: $main-gray;
+        padding: 0.3rem;
+        margin: 0 0.5rem;
+
+        &:hover {
+          color: $main-blue;
+        }
+      }
+    }
+  }
+  
+  .rent-list {
+    .rent-item {
+      display: flex;
+      min-height: 23rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+
+      &:last-child {
+        margin: 0;
+      }
+
+      .rent-image {
+        width: 35%;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../img/office-1.png');
+      }
+      .rent-body {
+        width: 65%;
+      }
+
+      .info-head {
+        display: flex;
+        font-weight: 500;
+        font-size: 1.4rem;
+        padding-right: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        div {
+          width: 14.2%;
+          text-align: center;
+        }
+      }
+      .info-body {
+        .info-item {
+          padding: 1rem;
+          display: flex;
+          font-size: 1.3rem;
+          align-items: center;
+          justify-content: space-between;
+
+          &:nth-child(odd) {
+            background: $light-gray;
+          }
+
+          div {
+            width: 14.2%;
+            text-align: center;
+          }
+
+          button {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
